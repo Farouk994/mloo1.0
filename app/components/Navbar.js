@@ -46,7 +46,7 @@ const Navbar = () => {
     <Wrapper>
       <Container>
         <Title>
-          <h1>mlo</h1>
+          <h1>mloo</h1>
         </Title>
         <NavLinks>
           <li>Home</li>
