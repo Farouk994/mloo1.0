@@ -6,7 +6,7 @@ import Bounce from 'react-reveal/Bounce';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import HeadShake from 'react-reveal/HeadShake';
 import { faComment } from '@fortawesome/free-regular-svg-icons';
-import { faLock } from '@fortawesome/free-solid-svg-icons';
+import { faLock, faSearch} from '@fortawesome/free-solid-svg-icons';
 // import { FaRegComment } from 'react-icons/fa';
 
 const Wrapper = styled.div`

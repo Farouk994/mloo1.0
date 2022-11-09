@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Button } from '@chakra-ui/react';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import SearchDrawer from './Forms/SearchForm';
 
 const Wrapper = styled.div`
   padding: 10px;
@@ -9,6 +13,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  // position: fixed;
 `;
 const Title = styled.div`
   display: flex;
@@ -33,13 +38,17 @@ const NavLogin = styled.div`
   display: flex;
   align-items: center;
   padding: 14px;
+  justify-content: space-between;
 `;
-const Icon = styled.div``;
 
-const Button = styled.button`
-  color: white;
-  background: black;
-  border-radius: 5%;
+const Icon = styled.div`
+  padding-right: 20px;
+
+  &:hover {
+    background-color: transparent;
+    color: black;
+    transform: scale(1.3);
+  }
 `;
 
 const Navbar = () => {
@@ -59,9 +68,21 @@ const Navbar = () => {
           <li>Blog</li>
         </NavLinks>
         <NavLogin>
-          <Icon>ICONS</Icon>
+          <Icon>
+            {/* <FontAwesomeIcon icon={faSearch} /> */}
+            <SearchDrawer />
+            {/* <IconButton aria-label='Search database' icon={<faSearch />} /> */}
+          </Icon>
           <Link href='/signup_page'>
-            <Button>Sign Up</Button>
+            {/* <Button>Sign Up</Button> */}
+            <Button
+              colorScheme=''
+              color='white'
+              variant='solid'
+              background='black'
+            >
+              Register
+            </Button>
           </Link>
         </NavLogin>
       </Container>
