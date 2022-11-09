@@ -5,7 +5,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-// import Link from '@mui/material/Link';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
@@ -125,7 +124,7 @@ export default function AuthForm({ page }) {
                     type='submit'
                     fullWidth
                     variant='contained'
-                    sx={{ mt: 3, mb: 2,bgcolor: 'black' }}
+                    sx={{ mt: 3, mb: 2, bgcolor: 'black' }}
                   >
                     Log In
                   </Button>
@@ -202,8 +201,8 @@ export default function AuthForm({ page }) {
                     fullWidth
                     id='username'
                     label='Username'
-                    name='email'
-                    autoComplete=''
+                    name='username'
+                    autoComplete='current-username'
                     autoFocus
                   />
                   <TextField
@@ -244,7 +243,7 @@ export default function AuthForm({ page }) {
                     type='submit'
                     fullWidth
                     variant='contained'
-                    sx={{ mt: 3, mb: 2, bgcolor:"black" }}
+                    sx={{ mt: 3, mb: 2, bgcolor: 'black' }}
                   >
                     Sign Up
                   </Button>

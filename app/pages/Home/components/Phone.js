@@ -205,7 +205,7 @@ const Phone = () => {
                   <h3>Sun 1:20 pm</h3>
                 </Heading>
                 <Body>
-                  <h3>Lynette</h3>
+                  <h3>Ali</h3>
                   <p>Hey! Have you seen this cool app</p>
                 </Body>
               </PopUp>

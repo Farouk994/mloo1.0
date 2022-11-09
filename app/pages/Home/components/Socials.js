@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container } from '@chakra-ui/react';
 import styled from 'styled-components';
 import LightSpeed from 'react-reveal/LightSpeed';
+import socialReviews from '../../../components/data/data';
+
+// console.log(socialReviews)
 
 const Wrapper = styled.div`
   display: flex;
@@ -131,6 +134,13 @@ const Box4 = styled.div`
 `;
 
 const Socials = () => {
+  const [review, setReview] = useState([]);
+
+  useEffect(() => {
+    setReview(socialReviews);
+    console.log(review);
+  }, []);
+
   return (
     <div>
       <Wrapper>

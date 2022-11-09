@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 const Wrapper = styled.div`
   padding: 10px;
@@ -46,7 +47,9 @@ const Navbar = () => {
     <Wrapper>
       <Container>
         <Title>
-          <h1>mloo</h1>
+          <Link href='/'>
+            <h1>mloo</h1>
+          </Link>
         </Title>
         <NavLinks>
           <li>Home</li>
@@ -57,7 +60,9 @@ const Navbar = () => {
         </NavLinks>
         <NavLogin>
           <Icon>ICONS</Icon>
-          <Button>Sign Up</Button>
+          <Link href='/signup_page'>
+            <Button>Sign Up</Button>
+          </Link>
         </NavLogin>
       </Container>
     </Wrapper>
