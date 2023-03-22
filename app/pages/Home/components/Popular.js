@@ -112,34 +112,85 @@ const Popular = () => {
         The most popular diets
       </h1>
       <Wrapper>
-        {diet.map((x) => {
-          return (
-            <Card key={x.id}>
-              <img src={x.image} alt="#" />
-              <h3>{x.nameDiet}</h3>
-              <Benefits>
-                <p>1000 kcal</p>
-                <p>2000 kcal</p>
-                <p>1500 kcal</p>
-              </Benefits>
-              <p style={{ height: "80px" }}>{x.description} </p>
-              <br></br>
-              <Value>
-                <p>
-                  from <span>${x.price}</span>/day
-                </p>
-            
-            {/* //buton was fetched from imported library (chakra) */}
-                <Stack direction="row" spacing={2}>
-                  <button>Choose</button>
-                  <Button colorScheme="teal" variant="solid">
-                    Email
-                  </Button>
-                </Stack>
-              </Value>
-            </Card>
-          );
-        })}
+        <Card>
+          <img src="/meal11.png" alt="#" />
+          <h3>Slim</h3>
+          <Benefits>
+            <p>1000 kcal</p>
+            <p>2000 kcal</p>
+            <p>1500 kcal</p>
+          </Benefits>
+          <p style={{ height: "80px" }}>
+            This emphasizes on whole, minimally processed foods like fruits,
+            vegetables,and fish.
+          </p>
+          <Value>
+            <p>
+              from <span>$9.99</span>/day
+            </p>
+            <button>Choose</button>
+          </Value>
+        </Card>
+
+        <Card>
+          <img src="/meal2.png" alt="#" />
+          <h3>Fit</h3>
+          <Benefits>
+            <p>1400 kcal</p>
+            <p>1300 kcal</p>
+            <p>1100 kcal</p>
+          </Benefits>
+          <p style={{ height: "80px" }}>
+            Popular low-carb diets include the Atkins diet and the ketogenic
+            diet.
+          </p>
+          <Value>
+            {" "}
+            <p>
+              from <span>$7.99</span>/day
+            </p>
+            <button>Choose</button>
+          </Value>
+        </Card>
+        <Card>
+          <img src="/meal5.png" alt="#" />
+          <h3>Vegan</h3>
+          <Benefits>
+            <p>1600 kcal</p>
+            <p>1500 kcal</p>
+            <p>1505 kcal</p>
+          </Benefits>
+          <p style={{ height: "80px" }}>
+            A vegan diet is often rich in fruits, vegetables, whole grains,
+            legumes, and nuts.
+          </p>
+          <Value>
+            {" "}
+            <p>
+              from <span>$8.99</span>/day
+            </p>
+            <button>Choose</button>
+          </Value>
+        </Card>
+        <Card>
+          <img src="/meal4.png" alt="#" />
+          <h3>Keto</h3>
+          <Benefits>
+            <p>1820 kcal</p>
+            <p>1325 kcal</p>
+            <p>1780 kcal</p>
+          </Benefits>
+          <p style={{ height: "80px" }}>
+            The Keto diet is based on the idea that our ancestors ate a certain
+            way before the advent of agriculture.
+          </p>
+          <Value>
+            <p>
+              from <span>$9.99</span>/day
+            </p>
+            <button>Choose</button>
+          </Value>
+        </Card>
       </Wrapper>
     </Container>
   );
